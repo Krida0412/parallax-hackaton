@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kuliner Modern - Perjalanan Rasa</title>
+    <link rel="stylesheet" href="src/css/output.css" />
+    <style>
+      html,
+      body {
+        scroll-behavior: smooth;
+        background-color: #fff;
+      }
+      img {
+        max-width: 100%;
+        display: block;
+        height: auto;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  </head>
+  <body class="font-sans text-gray-900 bg-white overflow-x-hidden">
+    <!-- HERO SECTION -->
+    <section
+      id="hero"
+      aria-labelledby="hero-title"
+      class="relative flex flex-col lg:flex-row items-center px-4 sm:px-6 md:px-10 lg:px-24 pt-20 pb-11 bg-white z-10"
+    >
+      <!-- Hidden heading for accessibility & SEO -->
+      <h2 id="hero-title" class="sr-only">Kuliner Modern - Perjalanan Rasa</h2>
+
+      <!-- TEXT CONTENT -->
+      <div
+        id="hero-text"
+        class="w-full lg:w-1/2 text-center lg:text-left space-y-6 order-1"
+        style="will-change: transform"
+      >
+        <h1
+          class="text-[50px] sm:text-5xl md:text-5xl lg:text-7xl font-black leading-tight tracking-tight uppercase max-w-2xl mx-auto lg:mx-0"
+        >
+          Where every<br />
+          <span class="text-purple-700">Spoon</span><br />
+          <span class="bg-yellow-300 px-3 inline-block"
+            >is a joyful journey</span
+          >
+        </h1>
+        <p
+          class="text-base md:text-lg text-gray-600 max-w-md mx-auto lg:mx-0 leading-relaxed"
+        >
+          Kami hadir bukan hanya untuk mengisi perut, tapi mengisi hati. Kuliner
+          yang tumbuh dari cerita.
+        </p>
+      </div>
+
+      <!-- IMAGE -->
+      <div
+        id="hero-img"
+        class="w-full lg:w-1/2 flex justify-center mt-6 order-2"
+        style="will-change: transform"
+      >
+        <img
+          src="src/img/pizza-guy.jpg"
+          alt="Ilustrasi chef membawa mangkuk makanan"
+          class="shadow-lg max-w-[300px] sm:max-w-[400px] md:max-w-[480px] object-cover"
+        />
+      </div>
+    </section>
+
+    <!-- MARQUEE SECTION -->
+    <section
+      class="relative w-full bg-gradient-to-r from-orange-500 to-red-600 py-4 overflow-hidden z-20"
+      aria-labelledby="marquee-title"
+    >
+      <!-- Heading tersembunyi untuk SEO & screen reader -->
+      <h2 id="marquee-title" class="sr-only">Daftar Produk Unggulan</h2>
+
+      <!-- Marquee Konten -->
+      <div
+        id="marquee-text"
+        class="whitespace-nowrap text-yellow-300 text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight uppercase"
+      >
+        OUR PRODUCTS OUR PRODUCTS OUR PRODUCTS OUR PRODUCTS OUR PRODUCTS OUR
+        PRODUCTS OUR PRODUCTS OUR PRODUCTS
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section
+      class="relative bg-white py-20 px-6 sm:px-10 md:px-16 lg:px-24 overflow-hidden"
+      id="about"
+      aria-labelledby="about-heading"
+    >
+      <!-- BACKGROUND TEXT -->
+      <h2
+        class="absolute top-10 left-0 right-0 text-center text-gray-100 text-7xl sm:text-9xl font-black uppercase pointer-events-none select-none opacity-10"
+      >
+        About
+      </h2>
+
+      <!-- MAIN CONTENT -->
+      <div
+        class="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12"
+      >
+        <!-- IMAGES -->
+        <div class="grid grid-cols-2 gap-4 w-full lg:w-1/2">
+          <img
+            src="src/img/pizza-guy.jpg"
+            alt="Ilustrasi minuman khas"
+            class="rounded-2xl shadow-lg object-cover aspect-[3/4] w-full"
+          />
+          <img
+            src="src/img/pizza-guy.jpg"
+            alt="Ilustrasi sajian makanan lokal"
+            class="rounded-2xl shadow-lg object-cover aspect-[3/4] w-full"
+          />
+        </div>
+
+        <!-- TEXT NARRATIVE -->
+        <div class="w-full lg:w-1/2 text-center lg:text-left space-y-6">
+          <p
+            class="text-sm font-bold tracking-widest text-purple-700 uppercase"
+          >
+            Kami Siapa?
+          </p>
+          <h3
+            class="text-3xl sm:text-4xl font-extrabold text-gray-900 leading-tight"
+          >
+            Lebih dari sekadar <span class="text-yellow-400">makanan</span>
+          </h3>
+          <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+            Kami adalah tim kreatif dari latar belakang kuliner, desain, dan
+            UMKM lokal yang percaya bahwa makanan bukan sekadar produk — ia
+            adalah ekspresi, cerita, dan penghubung antar jiwa.
+          </p>
+          <p class="text-base sm:text-lg text-gray-600 leading-relaxed">
+            Bersama para pelaku usaha kecil dari berbagai daerah, kami membangun
+            pengalaman kuliner yang otentik. Mengangkat rasa, menghidupkan
+            kembali tradisi, dan mengemasnya dalam desain yang kekinian.
+          </p>
+          <a
+            href="#menu"
+            class="inline-block mt-2 bg-purple-700 text-white px-6 py-3 rounded-full font-semibold text-sm hover:bg-purple-800 transition"
+          >
+            Jelajahi Kisah Rasa Kami
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section
+      class="w-full bg-white py-0 md:py-10 px-4 sm:px-6 md:px-12 text-center"
+      aria-labelledby="quote-heading"
+    >
+      <!-- Hidden heading for accessibility & SEO -->
+      <h2 id="quote-heading" class="sr-only">Kutipan Filosofi Hidangan</h2>
+
+      <blockquote
+        class="text-xl sm:text-2xl md:text-3xl text-gray-800 max-w-4xl mx-auto leading-relaxed font-semibold"
+      >
+        The food on the plate is the coming together of what is at its best in
+        the
+        <span class="text-purple-700 font-black">present</span>, with the
+        creative consequence of what was not used in the
+        <span class="text-yellow-400 italic">past</span>.
+      </blockquote>
+    </section>
+
+    <!-- MENU SECTION -->
+    <section
+      class="w-full bg-white py-10 px-4 sm:px-6 md:px-12 lg:px-24"
+      id="menu"
+      aria-labelledby="menu-title"
+    >
+      <!-- Hidden heading for semantic & SEO -->
+      <h2 id="menu-title" class="sr-only">Daftar Menu Kuliner Modern</h2>
+
+      <!-- Section Header -->
+      <div class="text-center mb-12 space-y-3">
+        <p
+          class="text-sm font-semibold text-purple-700 uppercase tracking-widest"
+        >
+          Menu Kami
+        </p>
+        <h3 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+          Rasakan Semua Pilihan Kami
+        </h3>
+        <p class="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
+          Kami menyajikan hidangan yang bukan hanya enak, tapi juga menyimpan
+          cerita di setiap sajiannya.
+        </p>
+      </div>
+
+      <!-- Menu Grid -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10"
+      >
+        <!-- ITEM 1 -->
+        <article
+          class="bg-gray-50 rounded-2xl shadow-sm hover:shadow-lg transition flex flex-col"
+        >
+          <img
+            src="src/img/pizza-guy.jpg"
+            alt="Pizza tradisional dengan saus rahasia keluarga"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h4 class="text-xl font-bold text-gray-900">Pizza Tradisional</h4>
+              <p class="text-gray-600 text-sm">
+                Dipanggang dengan batu, topping lokal pilihan, saus rahasia
+                keluarga.
+              </p>
+              <p class="text-purple-700 font-semibold text-lg">Rp45.000</p>
+            </div>
+            <a
+              href="#order"
+              class="inline-block bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold text-sm hover:bg-yellow-500 transition text-center"
+            >
+              Order Sekarang
+            </a>
+          </div>
+        </article>
+
+        <!-- ITEM 2 -->
+        <article
+          class="bg-gray-50 rounded-2xl shadow-sm hover:shadow-lg transition flex flex-col"
+        >
+          <img
+            src="src/img/pizza-guy.jpg"
+            alt="Sate rempah dengan bumbu nusantara"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h4 class="text-xl font-bold text-gray-900">Sate Rempah</h4>
+              <p class="text-gray-600 text-sm">
+                Perpaduan daging empuk dan bumbu nusantara yang kaya rasa.
+              </p>
+              <p class="text-purple-700 font-semibold text-lg">Rp35.000</p>
+            </div>
+            <a
+              href="#order"
+              class="inline-block bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold text-sm hover:bg-yellow-500 transition text-center"
+            >
+              Order Sekarang
+            </a>
+          </div>
+        </article>
+
+        <!-- ITEM 3 -->
+        <article
+          class="bg-gray-50 rounded-2xl shadow-sm hover:shadow-lg transition flex flex-col"
+        >
+          <img
+            src="src/img/pizza-guy.jpg"
+            alt="Es segar buah musiman tanpa pemanis buatan"
+            class="w-full h-56 object-cover"
+          />
+          <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+            <div>
+              <h4 class="text-xl font-bold text-gray-900">Es Segar Buah</h4>
+              <p class="text-gray-600 text-sm">
+                Kesegaran buah musiman, tanpa pemanis buatan. Favorit siang
+                hari.
+              </p>
+              <p class="text-purple-700 font-semibold text-lg">Rp20.000</p>
+            </div>
+            <a
+              href="#order"
+              class="inline-block bg-yellow-400 text-black px-5 py-2 rounded-full font-semibold text-sm hover:bg-yellow-500 transition text-center"
+            >
+              Order Sekarang
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- QUOTE SECTION -->
+    <section
+      class="w-full bg-white py-14 px-4 sm:px-6 md:px-12 text-center"
+      aria-labelledby="quote-heading"
+    >
+      <!-- Hidden heading for accessibility & SEO -->
+      <h2 id="quote-heading" class="sr-only">Kutipan Filosofi Hidangan</h2>
+
+      <blockquote
+        class="text-xl sm:text-2xl md:text-3xl text-gray-800 max-w-4xl mx-auto leading-relaxed font-semibold"
+      >
+        The food on the plate is the coming together of what is at its best in
+        the
+        <span class="text-purple-700 font-black">present</span>, with the
+        creative consequence of what was not used in the
+        <span class="text-yellow-400 italic">past</span>.
+      </blockquote>
+    </section>
+    <!-- TESTIMONIAL SECTION -->
+    <section
+      class="w-full bg-white py-5 md:py-10 px-4 sm:px-6 md:px-12 lg:px-24"
+      id="testimonial"
+      aria-labelledby="testimonial-heading"
+    >
+      <!-- Hidden heading for SEO and accessibility -->
+      <h2 id="testimonial-heading" class="sr-only">Testimoni Pelanggan</h2>
+
+      <div class="flex flex-col lg:flex-row items-center gap-10">
+        <!-- STATIC IMAGE -->
+        <div class="w-full lg:w-1/2 flex justify-center">
+          <img
+            src="src/img/pizza-guy.jpg"
+            alt="Foto pelanggan menikmati makanan"
+            class="rounded-3xl shadow-2xl w-[280px] sm:w-[320px] md:w-[360px] object-cover"
+          />
+        </div>
+
+        <!-- TESTIMONIAL CONTENT -->
+        <div
+          class="w-full lg:w-1/2 space-y-6 text-center lg:text-left relative"
+        >
+          <p
+            class="text-sm font-semibold text-purple-700 uppercase tracking-widest"
+          >
+            Apa kata mereka
+          </p>
+
+          <!-- SLIDES -->
+          <div class="relative h-[160px]" aria-live="polite">
+            <!-- Slide 1 -->
+            <blockquote
+              class="testimonial-slide transition-opacity duration-700 ease-in-out opacity-100"
+              id="testimonial-1"
+            >
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                “Rasanya bukan main!”
+              </h3>
+              <p class="text-gray-600 text-base">
+                Aku gak nyangka, dari plating sampai rasa, semuanya punya
+                cerita. Kayak makan karya seni.
+              </p>
+              <footer class="mt-4 text-sm text-purple-700 font-semibold">
+                — Rina, Pelanggan Setia
+              </footer>
+            </blockquote>
+
+            <!-- Slide 2 -->
+            <blockquote
+              class="testimonial-slide absolute inset-0 opacity-0 transition-opacity duration-700 ease-in-out"
+              id="testimonial-2"
+            >
+              <h3 class="text-2xl font-bold text-gray-900 mb-2">
+                “Makanannya punya emosi!”
+              </h3>
+              <p class="text-gray-600 text-base">
+                Bukan cuma kenyang, tapi hati juga ikut hangat. Tempat ini punya
+                rasa yang gak bisa didefinisikan.
+              </p>
+              <footer class="mt-4 text-sm text-purple-700 font-semibold">
+                — Farhan, Food Blogger
+              </footer>
+            </blockquote>
+          </div>
+
+          <!-- NAV DOTS -->
+          <div
+            class="flex justify-center lg:justify-start gap-3 pt-2"
+            role="tablist"
+            aria-label="Navigasi Testimoni"
+          >
+            <button
+              onclick="showTestimonial(1)"
+              class="w-3 h-3 rounded-full bg-purple-700"
+              aria-label="Tampilkan testimoni 1"
+            ></button>
+            <button
+              onclick="showTestimonial(2)"
+              class="w-3 h-3 rounded-full bg-purple-300"
+              aria-label="Tampilkan testimoni 2"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="src/js/animasi.js"></script>
+</html>
